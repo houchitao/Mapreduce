@@ -16,7 +16,6 @@ public class RatingReducer implements Reducer<String, Integer, Float> {
 		    double number = (double) values.get(i);
 		    sum +=number;
 		}
-		System.out.println(sum/values.size());
-		return null;
+		return(float)(sum/values.size());
 	}
 }
